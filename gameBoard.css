@@ -1,0 +1,344 @@
+body{
+  margin:0px;
+  padding:0px;
+  background: black;
+}
+
+/* Odd Image div */
+#odd{
+  margin-left: 200px;
+  margin-top: -450px;
+  border-radius: 50%;
+  position:absolute;
+  border: none;
+  width: 90px;
+  height: 90px;  
+  display: inline-block;
+  z-index: -1;
+}
+
+/* Odd Image */
+#oddImage{
+  border-radius: 50%;
+  width:90px;
+  height:90px;
+  margin-left:0px;
+  margin-bottom:200px;
+  position:absolute;
+}
+
+/* Complete SET */
+.set{
+  text-align: center;
+  margin-top: -90px;
+}
+
+/* Hit the odd one */
+h1{
+  font-size: 60px;
+  font-family: cursive;
+  color:darkred;
+  margin-left: 550px;
+  margin-top: -170px;
+  position : fixed;
+  font-weight: bold;
+}
+
+/* The odd picture */
+h2{
+  margin-left: 180px;
+  color:white;
+  letter-spacing: 2px;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+/* Border around scoreboard */
+.border{
+  border:5px solid black;
+  width:360px;
+  height:450px;
+  margin-left: 1110px;
+  z-index: -1 ;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px 15px green;
+}
+
+.values{
+  margin-top: -450px;
+  color:black;
+}
+
+/* Every Single Circle */
+.dot{
+  width:60px;
+  height:60px;
+  border:1px solid black;
+  padding:8px;
+  border-radius:50%;
+  display: inline-block;
+  background:none;
+}
+
+/*Start and Reset buttons div*/
+.buttons{
+  margin-left: 650px;
+  margin-top:100px;
+}
+
+/* Start Button */
+.btn{
+  border: none;
+  background: green;
+  color: #ffffff !important;
+  font-weight: 100;
+  padding: 15px;
+  font-size:20px;
+  font-style: italic;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  margin-left: -80px;
+  margin-top:0px;
+  position: fixed;
+  outline: none;
+
+}
+.btn:hover {
+  color: lightgreen !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  transition: all 0.3s ease 0s;
+}
+
+/* Reset Button */
+.reset{
+  border: none;
+  background: green;
+  color: #ffffff !important;
+  font-weight: 100;
+  font-style: italic;
+  padding: 15px;
+  font-size:20px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: absolute;
+  margin-left: 160px;
+  margin-top:0px;
+  outline: none;
+}
+.reset:hover {
+  color:lightgreen !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  transition: all 0.3s ease 0s;
+}
+
+#time{
+  color: lightpink;
+  position: absolute;
+  margin-top:38px;
+  margin-left: 1250px;
+  font-size: 40px;
+  font-family: cursive;
+}
+/* decreasing timer */
+#timeNumber{
+  margin-left: 1390px;
+  font-size: 40px;
+  position: absolute;
+  font-family: cursive;
+  animation: blink 0.5s linear infinite;
+  color:red;
+}
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+#score{
+  color: lightpink;
+  position: absolute;
+  margin-top:150px;
+  margin-left: 1220px;
+  font-size: 40px;
+  font-family: cursive;
+}
+#scoreNumber{
+  color:magenta;
+  margin-top:150px;
+  margin-left: 1390px;
+  font-size: 40px;
+  position: absolute;
+  font-family: cursive;
+}
+
+#accuracy{
+  color: lightpink;
+  position: absolute;
+  margin-top:250px;
+  margin-left: 1125px;
+  font-size: 40px;
+  font-family: cursive;
+}
+#accuracyNumber{
+  color: magenta;
+  position: absolute;
+  margin-top:250px;
+  margin-left: 1370px;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+#highScore{
+  color: lightpink;
+  position: absolute;
+  margin-top:340px;
+  margin-left: 1125px;
+  font-size: 40px;
+  font-family: cursive;
+}
+#highScoreNumber{
+  color: magenta;
+  position: absolute;
+  margin-top:340px;
+  margin-left: 1410px;
+  font-size: 40px;
+  font-family: cursive;
+
+}
+
+/* Status Message */
+#msg{
+  margin-top: 195px;
+  margin-left: 230px;
+  font-size: 35px;
+  color: gold;
+  position: absolute;
+  font-family: cursive;
+  animation: blink 1s linear infinite;
+
+}
+
+.status{
+  margin-top:200px;
+  margin-left: 70px;
+  font-size: 35px;
+  color: gold;
+  position: absolute;
+  font-family: serif;
+  letter-spacing: 1px;
+}
+
+/* Bubbles div */
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:-2;
+  overflow:hidden;
+  top: 0;
+  left:0;
+}
+
+/* Every single bubble */
+.bubble{
+
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background:slateblue;
+  border-radius: 50%;
+  opacity:0.5;
+  animation: flying 10s infinite ease-in;
+}
+
+/* Bulbble Children */
+.bubble:nth-child(1){
+  width:40px;
+  height:40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+.bubble:nth-child(2){
+  width:80px;
+  height:80px;
+  left: 25%;
+  animation-duration: 7s;
+}
+.bubble:nth-child(3){
+  width:20px;
+  height:20px;
+  left: 50%;
+  animation-duration: 5s;
+}
+.bubble:nth-child(4){
+  width:75px;
+  height:75px;
+  left: 75%;
+  animation-duration: 6s;
+}
+.bubble:nth-child(5){
+  width:35px;
+  height:35px;
+  left: 100%;
+  animation-duration: 8s;
+}
+.bubble:nth-child(6){
+  width:60px;
+  height:60px;
+  left: 10%;
+  animation-duration: 5.5s;
+}
+.bubble:nth-child(7){
+  width:100px;
+  height:100px;
+  left: 30%;
+  animation-duration:6.2s;
+}
+.bubble:nth-child(8){
+  width:15px;
+  height:15px;
+  left: 60%;
+  animation-duration: 4.8s;
+}
+.bubble:nth-child(9){
+  width:100px;
+  height:100px;
+  left: 80%;
+  animation-duration: 7.2s;
+}
+.bubble:nth-child(10){
+  width:40px;
+  height:40px;
+  left: 45%;
+  animation-duration: 4.8s;
+}
+.bubble:nth-child(11){
+  width:90px;
+  height:90px;
+  left: 86%;
+  animation-duration: 7.2s;
+}
+
+/* Animation for Bubbles */
+@keyframes flying{
+  0%{
+    bottom: -100px;
+    transform:translate(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom: 1080px;
+    transform:translate(-100px);
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="gameBoard.css" rel="stylesheet">
+    <script src="gameBoard.js"></script>
+    <title>Game page</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+</head>
+
+<body>
+    <!-- play and reset buttons -->
+    <div class="buttons">
+        <button class="btn" id="start" onclick="play()">start</button>
+        <button class="reset" onclick="reset()">Reset</button>
+    </div>
+    <h2>Odd picture</h2>
+    
+    <div id="msg">Push Start to Play</div>
+    <p class="status">STATUS : </p>
+    <div class="border"></div>
+    
+    <!-- Odd picture -->
+    <div id="odd"><img src="images/gify.gif" id="oddImage"></div>
+
+    <!-- Score board -->
+    <div class="values">
+        <div id="time">TIME : </div>
+        <div>
+            <p id="timeNumber">30</p>
+        </div>
+        <div id="score">SCORE : </div>
+        <div>
+            <p id="scoreNumber">0</p>
+        </div>
+        <div id="accuracyNumber"></div>
+        <p id="accuracy">ACCURACY : </p>
+        <div id="highScoreNumber"></div>
+        <p id="highScore">HIGH SCORE : </p>
+    </div>
+    <h1>Hit the odd one</h1>
+
+    <!-- Game Board -->
+    <div class="set">
+        <span><img src="images/bird.jpg" id="s1" class="dot" onclick="changeImage(1)"></span>
+        <span><img src="images/bird.jpg" id="s2" class="dot" onclick="changeImage(2)"></span>
+        <span><img src="images/bird.jpg" id="s3" class="dot" onclick="changeImage(3)"></span>
+        <span><img src="images/bird.jpg" id="s4" class="dot" onclick="changeImage(4)"></span>
+        <span><img src="images/bird.jpg" id="s5" class="dot" onclick="changeImage(5)"></span><BR>
+        <span><img src="images/bird.jpg" id="s6" class="dot" onclick="changeImage(6)"></span>
+        <span><img src="images/bird.jpg" id="s7" class="dot" onclick="changeImage(7)"></span>
+        <span><img src="images/bird.jpg" id="s8" class="dot" onclick="changeImage(8)"></span>
+        <span><img src="images/bird.jpg" id="s9" class="dot" onclick="changeImage(9)"></span>
+        <span><img src="images/bird.jpg" id="s10" class="dot" onclick="changeImage(10)"></span><BR>
+        <span><img src="images/bird.jpg" id="s11" class="dot" onclick="changeImage(11)"></span>
+        <span><img src="images/bird.jpg" id="s12" class="dot" onclick="changeImage(12)"></span>
+        <span><img src="images/bird.jpg" id="s13" class="dot" onclick="changeImage(13)"></span>
+        <span><img src="images/bird.jpg" id="s14" class="dot" onclick="changeImage(14)"></span>
+        <span><img src="images/bird.jpg" id="s15" class="dot" onclick="changeImage(15)"></span><BR>
+        <span><img src="images/bird.jpg" id="s16" class="dot" onclick="changeImage(16)"></span>
+        <span><img src="images/bird.jpg" id="s17" class="dot" onclick="changeImage(17)"></span>
+        <span><img src="images/bird.jpg" id="s18" class="dot" onclick="changeImage(18)"></span>
+        <span><img src="images/bird.jpg" id="s19" class="dot" onclick="changeImage(19)"></span>
+        <span><img src="images/bird.jpg" id="s20" class="dot" onclick="changeImage(20)"></span><BR>
+        <span><img src="images/bird.jpg" id="s21" class="dot" onclick="changeImage(21)"></span>
+        <span><img src="images/bird.jpg" id="s22" class="dot" onclick="changeImage(22)"></span>
+        <span><img src="images/bird.jpg" id="s23" class="dot" onclick="changeImage(23)"></span>
+        <span><img src="images/bird.jpg" id="s24" class="dot" onclick="changeImage(24)"></span>
+        <span><img src="images/bird.jpg" id="s25" class="dot" onclick="changeImage(25)"></span><BR>
+        <span><img src="images/bird.jpg" id="s26" class="dot" onclick="changeImage(26)"></span>
+        <span><img src="images/bird.jpg" id="s27" class="dot" onclick="changeImage(27)"></span>
+        <span><img src="images/bird.jpg" id="s28" class="dot" onclick="changeImage(28)"></span>
+        <span><img src="images/bird.jpg" id="s29" class="dot" onclick="changeImage(29)"></span>
+        <span><img src="images/bird.jpg" id="s30" class="dot" onclick="changeImage(30)"></span><BR>
+    
+    </div>
+
+    <!-- Background animnation-->
+    <div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+</body>
+
+</html>
