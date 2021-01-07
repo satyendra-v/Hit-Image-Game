@@ -1,0 +1,116 @@
+body{
+padding:0%;
+margin:0%;
+z-index: -1;
+position:fixed;
+}
+
+.bg{ 
+  width:100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.ins_btn{ 
+    border: none;
+    background: orange;
+    font-weight: 100;
+    padding: 1%;
+    font-size:150%;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin-top: -300px;
+    margin-left: 650px;
+    border-radius: 15px;
+    position: absolute;
+    outline: none;
+}
+.ins_btn:hover {
+    font-weight: 700;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.5s ease 0s;
+}
+
+.start{
+  border: none;
+  background: orange;
+  font-weight: 100;
+  padding: 15px;
+  font-size:30px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: -500px;
+  margin-left: 730px;
+  position: absolute;
+  border-radius: 15px;
+  letter-spacing: 5px;
+  outline: none;
+}
+.start:hover {
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+    }
+
+
+header {
+    font-weight:bold;
+    font-style: oblique;
+    position: absolute;
+    margin-top: 50px;
+    margin-left:350px;
+    font-size: 120px;
+    font-family: futura;
+    color:#313131;
+    animation:colorchange 20s infinite alternate;
+}
+
+@keyframes colorchange {
+    0%{color:gold; }
+    10%{color:cyan; }
+    20%{color:purple; }
+    30%{color:yellow; }
+    40%{color:darkcyan; }
+    50%{color:yellowgreen; }
+    60%{color: violet}
+    70%{color:pink; }
+    80%{color:darkmagenta; }
+    90%{color:darkseagreen; }
+    100%{color:sandybrown; }
+}
+    
+.blink{
+font-style: normal;
+text-align: center;
+margin-top:-400px;
+margin-left:500px; 
+position: absolute;
+}
+
+span{
+font-size: 50px;
+font-family: cursive;
+color:white;
+font-weight:bold;
+animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+
+footer{
+  position:absolute;
+  font-size: 20px;
+  left : 70%;
+  bottom : 100px;
+  font-weight: bold;
+}
